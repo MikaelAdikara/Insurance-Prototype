@@ -1,0 +1,14 @@
+[
+ {
+  "key": "s1_monthly",
+  "label": "Extra policies paid monthly",
+  "baseline": 0.7474226804123711,
+  "per_month": 50
+ },
+ {
+  "key": "s2_pa",
+  "label": "Personal Accident (first policy)",
+  "baseline": 0.08870967741935484,
+  "per_month": 50
+ }
+]

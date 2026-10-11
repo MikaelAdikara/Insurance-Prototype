@@ -1,0 +1,28 @@
+# Data asli: JANGAN di-commit (repo public)
+data/raw/
+*.xlsx
+*.xls
+*.csv
+!data/synthetic/*.csv
+
+# Hasil pipeline dari data asli
+data/processed/
+app/src/data/real/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

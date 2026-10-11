@@ -1,0 +1,94 @@
+{
+ "kpi": {
+  "policies": 4996,
+  "customers": 4704,
+  "churn": 185,
+  "stop_rate": 0.037029623698959166,
+  "extra_share": 0.05844675740592474,
+  "extra_churn_share": 0.8648648648648649
+ },
+ "segments": [
+  {
+   "code": "S1",
+   "name": "Extra policies",
+   "action": "PREVENT & RESCUE",
+   "n": 292,
+   "churn": 160,
+   "rate": 0.547945205479452,
+   "ci_low": 0.4906062193971357,
+   "ci_high": 0.604039068358055,
+   "share_policies": 0.05844675740592474,
+   "share_churn": 0.8648648648648649
+  },
+  {
+   "code": "S2",
+   "name": "Personal Accident (first policy)",
+   "action": "FIX RENEWAL",
+   "n": 124,
+   "churn": 11,
+   "rate": 0.08870967741935484,
+   "ci_low": 0.050256220425875686,
+   "ci_high": 0.1518805438059721,
+   "share_policies": 0.024819855884707767,
+   "share_churn": 0.05945945945945946
+  },
+  {
+   "code": "S3",
+   "name": "First policy, multi-policy customer",
+   "action": "WATCH",
+   "n": 184,
+   "churn": 0,
+   "rate": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.020450537622586442,
+   "share_policies": 0.03682946357085669,
+   "share_churn": 0.0
+  },
+  {
+   "code": "S4",
+   "name": "Single-policy, pays monthly",
+   "action": "LIGHT NUDGE",
+   "n": 2730,
+   "churn": 14,
+   "rate": 0.005128205128205128,
+   "ci_low": 0.0030572618887833923,
+   "ci_high": 0.008589887113935176,
+   "share_policies": 0.5464371497197759,
+   "share_churn": 0.07567567567567568
+  },
+  {
+   "code": "S5",
+   "name": "Single-policy, other payment",
+   "action": "PROTECT: DON'T DISTURB",
+   "n": 1666,
+   "churn": 0,
+   "rate": 0.0,
+   "ci_low": 0.0,
+   "ci_high": 0.002300493139873957,
+   "share_policies": 0.333466773418735,
+   "share_churn": 0.0
+  }
+ ],
+ "rule": {
+  "flagged": 337,
+  "caught": 168,
+  "total_churn": 185
+ },
+ "not_drivers": [
+  {
+   "factor": "Gender",
+   "p": 0.059919619819551934,
+   "test": "chi-square"
+  },
+  {
+   "factor": "Marital status",
+   "p": 0.9230564312234211,
+   "test": "chi-square"
+  },
+  {
+   "factor": "Age 26-35",
+   "p": 0.3913508415976412,
+   "test": "logit, controlling for all portfolio features"
+  }
+ ]
+}
